@@ -1,0 +1,85 @@
+.bodyMain {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    margin: 0px auto;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 5px;
+}
+
+.bodyNested1 img {
+    max-width: 100%;
+    border-radius: 20px;
+    vertical-align: middle;
+}
+
+.bodyNested1 {
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.bodyNested2 {
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    height: auto; /* Height ko auto kar diya */
+    text-align: center;
+    background-color: #9569ec;
+    border-radius: 20px;
+}
+
+.bodyNested2 h1 {
+    margin: 15px 0 0 40px;
+    text-align: start;
+    display: flex;
+}
+
+.bodyNested2 p {
+    text-align: start;
+    display: flex;
+    font-size: 20px;
+    color: #030303;
+    margin: 15px 0 20px 40px;
+    word-wrap: break-word;
+}
+
+.about-info {
+    background-color: #43a724;
+    border-radius: 30px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    padding: 20px;
+}
+
+.about-info h4 {
+    color: white;
+    margin-bottom: 0;
+}
+
+.about-info p {
+    color: white;
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .bodyMain {
+        flex-direction: row;
+    }
+
+    .bodyNested1 {
+        width: 40%;
+    }
+
+    .bodyNested2 {
+        width: 60%;
+        max-height: 600px; /* Zarurat ke mutabiq max-height ko adjust kiya */
+    }
+}
